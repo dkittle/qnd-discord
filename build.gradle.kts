@@ -8,6 +8,9 @@ plugins {
 group = "com.qnd"
 version = "0.0.1-SNAPSHOT"
 
+
+val kordVersion: String by rootProject
+
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)
@@ -28,6 +31,7 @@ dependencies {
 	implementation("org.postgresql:postgresql")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+	implementation("dev.kord:kord-core:$kordVersion")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
