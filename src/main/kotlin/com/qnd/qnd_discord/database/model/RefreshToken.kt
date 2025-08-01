@@ -4,9 +4,8 @@ import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
-import org.springframework.stereotype.Indexed
 import java.time.Instant
-import java.util.UUID
+import java.util.*
 
 @Entity(name = "refresh_tokens")
 data class RefreshToken(
